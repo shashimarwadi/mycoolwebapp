@@ -1,0 +1,15 @@
+server:
+  port: 8081
+spring:
+  datasource:
+    url: jdbc:mysql://${MY_COOL_DATABASE_HOST}:${MY_COOL_DATABASE_PORT}/${MYSQL_DATABASE}?verifyServerCertificate=false&useSSL=false&requireSSL=false
+    username: ${DB_USER}
+    password: ${DB_PASSWORD}
+  jpa:
+    hibernate:
+      ddl-auto: update
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    show-sql: true
+
+spring.jpa.properties.hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
