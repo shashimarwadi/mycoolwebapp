@@ -23,7 +23,6 @@ public class ItemMasterServiceImpl implements ItemMasterService {
 	@Override
 	public List<ItemMaster> getAllItems() {
 		List<ItemMaster> items = (List<ItemMaster>) itemMasterRepository.findAll();
-		System.out.println("Hello...");
 		
 		return items;
 	}
