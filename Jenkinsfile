@@ -3,9 +3,6 @@ pipeline {
 
   agent { node { label 'LS'} }
 
-  options {
-    ansiColor('xterm') 
-  }
 
   stages {
     stage('initilization') {
